@@ -10,8 +10,16 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', '.prettierrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'hexagonal-architecture'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
   },
+  overrides: [
+    {
+      files: ['**/modules/**/*.ts'],
+      rules: {
+        'hexagonal-architecture/enforce': ['error'],
+      },
+    },
+  ],
 };

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.8.3",
+    "@tanstack/react-query-devtools": "^5.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,6 +24,7 @@
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-hexagonal-architecture": "^1.0.3",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "prettier": "3.1.0",
